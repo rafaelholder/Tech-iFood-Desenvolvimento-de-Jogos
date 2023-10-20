@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms com HTML</title>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Form enviado')" autocomplete="on" method="get" >
+            Nome: <input type="text" name="name"><br>
+            Idade: <input type="range" min="1" max="99" name="age" step="5"><br>
+            Classe Favorita de RPG: <input type="text" name="rpg_class"><br>
+            Senha: <input type="password" autocomplete="off"><br>
+            Cor: <input type="color"><br>
+            Email: <input type="email"><br>
+            Site: <input type="url"><br>
+            Data Favorita: <input type="date"><br>
+            Semana Favorita: <input type="week"><br>
+            Mes Favorito: <input type="month"><br>
+            Check: <input type="checkbox"> <input type="checkbox"><br>
+            Radio: <input type="radio"><br>
+            Hidden: <input type="hidden"><br>
+            File: <input type="file"><br>
+            Search: <input type="search"><br>
+
+            <button type="submit">Enviar</button>
+
+            <select name="Role" id="select">
+                <option value="ti">T.I</option>
+                <option value="administrativo">Administrativo</option>
+                <option value=""></option>
+            </select>
+            
+    </form>
+</body>
+</html>
