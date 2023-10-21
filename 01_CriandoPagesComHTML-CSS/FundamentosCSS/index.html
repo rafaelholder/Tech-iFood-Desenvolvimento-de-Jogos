@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos CSS</title>
+    <link rel="stylesheet" href="/01_CriandoPagesComHTML-CSS/FundamentosCSS/assets/css/style.css">
+    <style>
+        blockquote{
+            background: rgba(0, 0, 101, 0.5);
+        }
+        body {
+            counter-reset: section;
+        }
+        h2::before {
+            counter-increment: section;
+            content: 'Section ' counter(section) ': ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Using CSS Counters</h1>
+    <h2> <a href="">Html Tutorial</a> </h2>
+    <h2> <a href="">JavaScript Tutorial</a> </h2>
+    <h2> <a href="">CSS Tutorial</a> </h2>
+    <blockquote>
+        CSS Contem props que seriam declaradas como -> prop: valor; <br> 
+        EXEMPLOS: background: red;
+        <h3 style="color: red; background: black;">
+            CSS inline
+        </h3>
+        <h3>
+            No CSS existem os seletores, que selecionam as tags html para estilizar as mesmas.
+            <br> Existem os seletores por: Tag, id, class, geral(*), por Atributo
+        </h3>
+        <div id="id-style">
+            <h4>Div estilizada por id</h4>
+        </div>
+        <div class="class-style">
+            <h4>Div estilizada por class</h4>
+        </div>
+        <div class="class-style text">
+            <h4>Especificando classe a ser estilizada</h4>
+        </div>
+    </blockquote>
+    <section id="Buscas">
+        <div id="busca-por-atributos">
+            <ul>
+                <li>
+                    <a title="Streaming Netflix" href="https://www.netflix.com" target="_blank">
+                        Netflix
+                    </a>
+                </li>
+                <li>
+                    <a title="Streaming PrimeVideo" href="http://www.primevideo.com/" target="_blank">
+                        PrimeVideo
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="busca-descendente">
+            <p>Buscando descendente pelo css <p><i>Isso eh um descendente de um descendente</i></p></p>
+        </div>
+        <div id="busca-filho">
+            <span>Buscando exclusivamente os filhos da div</span>
+        </div>
+        <div id="busca-irmaos">
+            <h5>Filho dentro da div</h5>
+        </div>
+        <h5>Primeiro irmao fora da div</h5>
+        <h5>Segundo irmao fora da div</h5>
+    </section>
+    <section id="Largura-altura">
+        <div class="largura">
+            <h6>Mexendo com largura</h6>
+            <button>Este button tem a largura exata do conteudo dele</button>
+        </div>
+        <div class="altura">
+            <h6>Mexendo com altura</h6>
+            <div class="div01">Div usando inherit</div>
+        </div>
+        <div id="maxwidth-maxheight">
+            <button>Fechar button Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates, labore ab voluptatibus suscipit cumque amet mollitia neque odit? Non quo cupiditate molestiae aliquam ea asperiores at eos alias nihil.</button>
+        </div>
+        <div id="margin">
+            <button>Utilizando margin</button>
+            <button>Utilizando margin</button>
+        </div>
+        <div id="padding">
+            <button>Button usando padding</button>
+        </div>
+        <div id="box-sizing">
+            <h3>box-sizing</h3>
+        </div>
+
+    </section>
+   
+
+
+    
+</body>
+</html>

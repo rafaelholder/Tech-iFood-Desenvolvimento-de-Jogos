@@ -1,0 +1,119 @@
+body{
+    padding: 12px;
+}
+
+h1 {
+    background: rebeccapurple;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+blockquote{
+    padding: 4px;
+    border: solid 1px;
+    border-radius: 12px;
+}
+#id-style{
+    background: green;
+    padding: 2px;
+}
+.class-style{
+    background: red;
+    padding: 4px;
+    color: aliceblue;
+}
+.text{
+    text-transform: uppercase;
+    color: silver;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+#busca-por-atributos{
+    margin: 12px;
+}
+[title~='Streaming']{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+[title~='Netflix']{
+    color: red;
+}
+[title~='PrimeVideo']{
+    color: darkblue;
+}
+[href*='www']{
+    background-color: yellowgreen;
+    border-radius: 4px;
+    padding: auto ;
+}
+
+#busca-descendente{
+    background-color: brown;
+}
+div p{
+    color: aqua;
+}
+
+#busca-filho{
+    background-color: chocolate;
+}
+div > span{
+    color: aquamarine;
+}
+
+#busca-irmao{
+    background-color: wheat;
+}
+div + h5{
+    color: crimson;
+}
+
+.largura{
+    background-color: darkblue;
+    width: auto;
+    color: aliceblue;
+}
+.altura{
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+}
+.div01{
+    height: inherit;
+    width: inherit;
+    background-color: blueviolet;
+}
+
+#maxwidth-maxheight button{
+    min-width: 200px;
+    min-height: 100px;
+    max-width: 600px;
+    max-height: 400px;
+    background-color: slateblue;
+}
+
+#margin button{
+    margin:20px 40px 60px 80px; /* cima, direita, baixo, esquerda*/
+    /* margin: auto ;  serve para centralizar o elemento horizontalmente na tela*/
+}
+
+#padding button{
+    padding: 20px 40px 60px 80px; /* cima, direita, baixo, esquerda*/
+    /* padding: auto ;  serve para centralizar o content horizontalmente dentro do elemento*/
+}
+
+#box-sizing h3{
+    background-color: darkcyan;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    box-sizing: border-box;
+}
